@@ -1,6 +1,6 @@
 # Ignore .pyc files
 *.pyc
-.gitignore
+
 # Ignore __pycache__ directories
 __pycache__/
 /server/__pycache__/
