@@ -42,4 +42,4 @@ Written in Python.
 5. Next, run server as many as you want (recommanded max 3 for local server) in a separate terminal ```python -m server.main 5000``` 
 *** Remember to change port for each server like (server 2) ```python -m server.main 5001``` (server 3) ```python -m server.main 5002``` ***
 6. Next run as many clients as you want at the same time in saperate terminal window. ```python client/client.py```
-7. User the system from the client terminal CLI, You will get all the system features command on the chat terminal. Enjoy! 
+7. Use the system from the client terminal CLI, You will get all the system features command on the chat terminal. Enjoy! 
