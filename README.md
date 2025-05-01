@@ -34,6 +34,10 @@ graph TD;
 
 Written in Python.
 
+### install required packages
+```pip install requests rich flask fasteners``` 
+to check list of installed packages in your local machine use ```pip list```
+
 ## How to run it? (example terminal codes are for Windows. might not work on Mac/Linux)
 1. Clone the Github repo
 2. Get inside folder named "taskmanager" ```cd taskmanager```
