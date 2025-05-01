@@ -1,11 +1,7 @@
 # Ignore .pyc files
 *.pyc
-
+.gitignore
 # Ignore __pycache__ directories
 __pycache__/
 /server/__pycache__/
 /server/services/__pycache__/
-
-# Ignore specific JSON files
-/db/tasks.json
-/server/data/users.json
