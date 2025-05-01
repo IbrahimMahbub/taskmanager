@@ -17,10 +17,10 @@ Comments/message inside each task for better task management.
 microservice architecture
 ```mermaid
 graph TD;
-    Client-->Middleware (LB);
-    Middleware (LB)-->Server(s);
-    Server(s)-->json DB;
-    Server(s)-->chat_service,Task_service,user_service;
+    Client-->Middleware;
+    Middleware-->Server;
+    Server-->jsonDB;
+    Server-->'chat_service','Task_service','user_service';
 ```
 
 
