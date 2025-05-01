@@ -15,15 +15,14 @@ Comments/message inside each task for better task management.
 
 ## Architecture
 microservice architecture
+```mermaid
+graph TD;
+    Client-->Middleware (LB);
+    Middleware (LB)-->Server(s);
+    Server(s)-->json DB;
+    Server(s)-->chat_service,Task_service,user_service;
+```
 
-+---------+          +--------------------+         +--------------+         +---------+
-|  Client | <------> | Middleware (LB)    | <-----> | Server(s)    | <-----> | json DB |
-+---------+          +--------------------+         +--------------+         +---------+
-                         |           |         +---| chat_service |
-                         |           +--------->   | Task_service |
-                         |                     +-->+ user_service |
-                         |
-                         | (Assigns clients to servers dynamically)
 
 
 ### Components:
@@ -35,7 +34,7 @@ microservice architecture
 
 Written in Python.
 
-## How to run it? (example terminal codes are for Windows might not work on Mac/Linux)
+## How to run it? (example terminal codes are for Windows. might not work on Mac/Linux)
 1. Clone the Github repo
 2. Get inside folder named "taskmanager" ```cd taskmanager```
 3. open Terminal/Powershell
