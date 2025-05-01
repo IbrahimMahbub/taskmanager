@@ -99,7 +99,7 @@ def get_chat():
         user_info = users.get(user_id, {})
         chat_with_names.append({
             "user_id": user_id,
-            "username": user_info.get("username", "Unknown"),
+            "username": user_info.get("name", "Unknown"),
             "message": msg.get("message", ""),
             "timestamp": msg.get("timestamp", "")  # in case you add timestamps later
         })
@@ -117,7 +117,7 @@ def update_existing_chat_usernames():
         for msg in task.get("chat", []):
             uid = msg.get("user_id")
             if msg.get("username") == "Unknown" and uid in users:
-                msg["username"] = users[uid].get("username", "Unknown")
+                msg["username"] = users[uid].get("name", "Unknown")
                 updated = True
 
     if updated:
