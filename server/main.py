@@ -19,7 +19,7 @@ app.register_blueprint(chat_bp, url_prefix="/chat")
 def health_check():
     return jsonify({"status": "ok"}), 200
 
-# Optional: register with middleware
+# register with middleware
 def register_with_middleware(server_port):
     try:
         response = requests.post(
@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     port = int(sys.argv[1])
 
-    # Optional registration (can be removed if not needed)
+    # Optional registration
     threading.Thread(target=register_with_middleware, args=(port,), daemon=True).start()
 
     # Run Flask app with threading enabled

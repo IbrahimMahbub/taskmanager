@@ -31,7 +31,7 @@ def migrate_owner_field():
 migrate_owner_field()
 
 
-# --- Add this block to clean up malformed tasks ---
+# clean up malformed tasks ---
 def clean_tasks():
     tasks = load_json_safe(TASK_DB)
     updated = False

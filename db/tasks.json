@@ -1,1 +1,42 @@
-{}
+{
+  "id_7d0bd6d0": {
+    "title": "DS-FinalTask",
+    "owner_id": "id_fd359882",
+    "status": "Done",
+    "members": [
+      "id_fd359882"
+    ],
+    "chat": [
+      {
+        "user_id": "id_2aa63999",
+        "username": "Ibrahim",
+        "message": "i am working on the project",
+        "timestamp": "2025-05-01 18:56:52"
+      },
+      {
+        "user_id": "id_fd359882",
+        "username": "Andrejs",
+        "message": "ok great",
+        "timestamp": "2025-05-01 18:57:27"
+      },
+      {
+        "user_id": "id_fd359882",
+        "username": "Andrejs",
+        "message": "whats the update?",
+        "timestamp": "2025-05-01 18:57:57"
+      },
+      {
+        "user_id": "id_2aa63999",
+        "username": "Ibrahim",
+        "message": "its almost done",
+        "timestamp": "2025-05-01 18:58:41"
+      },
+      {
+        "user_id": "id_2aa63999",
+        "username": "Ibrahim",
+        "message": "its done",
+        "timestamp": "2025-05-01 18:59:06"
+      }
+    ]
+  }
+}

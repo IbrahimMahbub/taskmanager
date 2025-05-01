@@ -30,7 +30,7 @@ class TaskManagerClient:
             ))
             return True
         except Exception as e:
-            # If an exception occurs (like a connection error), print the error and return False
+            # If an exception occurs print the error and return False
             self.console.print(Panel.fit(
                 f"[red]Error connecting to middleware:[/red] {str(e)}",
                 title="Connection Failed",
@@ -38,7 +38,7 @@ class TaskManagerClient:
             ))
             return False
 
-    # Continue with the rest of your methods, e.g., register(), login(), etc.
+    # Continue with the rest
 
 
 
@@ -370,11 +370,11 @@ class TaskManagerClient:
         while True:
             self.console.print(Panel.fit(
                 "[bold]Task Management System[/bold]",
-                subtitle="Choose an option below"
+                subtitle="Choose from below"
             ))
 
             choice = IntPrompt.ask(
-                "1. Register\n2. Login\n3. Exit",
+                "1. Register\n2. Login\n3. Exit\nChoose an option", 
                 choices=["1", "2", "3"],
                 show_choices=False
             )

@@ -5,15 +5,15 @@ from server.services.utils import load_json_safe, save_json_safe
 
 chat_bp = Blueprint("chat", __name__)
 TASK_DB = os.path.join("db", "tasks.json")
-USER_DB = os.path.join("data", "users.json")  # to map user_id -> username
+USER_DB = os.path.join("server", "data", "users.json")  # Match user_service
 
 # --- Ensure required files/directories exist ---
-if not os.path.exists("data"):
-    os.makedirs("data")
+if not os.path.exists("server/data"):
+    os.makedirs("server/data")
 if not os.path.exists(USER_DB):
     save_json_safe(USER_DB, {})
 
-# Optional: Clean malformed chat entries
+# Clean malformed chat entries
 def clean_chats():
     tasks = load_json_safe(TASK_DB)
     updated = False

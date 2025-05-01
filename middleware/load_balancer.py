@@ -37,7 +37,7 @@ def connect():
     selected_server = random.choice(servers)
     return jsonify(selected_server), 200
 
-# Optional: for debugging
+# for debugging
 @app.route("/servers", methods=["GET"])
 def list_servers():
     """List all registered servers"""
