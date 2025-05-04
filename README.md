@@ -20,7 +20,7 @@ graph TD;
     Client-->Middleware;
     Middleware-->Server;
     Server-->jsonDB;
-    Server--> 'chat_service', 'Task_service', 'user_service';
+    Server--> 'chat_service','Task_service','user_service';
 ```
 
 ### Components:
