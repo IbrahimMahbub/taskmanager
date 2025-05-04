@@ -38,5 +38,33 @@
         "timestamp": "2025-05-01 18:59:06"
       }
     ]
+  },
+  "id_a0678e2d": {
+    "title": "DS_project_final",
+    "owner_id": "id_fd359882",
+    "status": "Done",
+    "members": [
+      "id_fd359882"
+    ],
+    "chat": [
+      {
+        "user_id": "id_fd359882",
+        "username": "Andrejs",
+        "message": "hi, we need to start the task",
+        "timestamp": "2025-05-03 23:18:33"
+      },
+      {
+        "user_id": "id_2aa63999",
+        "username": "Ibrahim",
+        "message": "i am working on it",
+        "timestamp": "2025-05-03 23:18:49"
+      },
+      {
+        "user_id": "id_0086053c",
+        "username": "Igor",
+        "message": "i am putting it on in progress",
+        "timestamp": "2025-05-03 23:19:15"
+      }
+    ]
   }
 }
